@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <Input placeholder='@moutinhofuturedev' textAlign="center" variant="filled" mb={3} type="email"/>
         <Input placeholder='********' textAlign="center" variant="filled" mb={3} type="password"/>
         <Button mb={6} colorScheme='teal'>Log in</Button>
-        <Button onClick={toggleColorMode}>Toggle Color Mode</Button>
+        <Button onClick={toggleColorMode}>Toggle Color Mode</Button> {/* dark:light mode */}
       </Flex>
     </Flex>
   )
