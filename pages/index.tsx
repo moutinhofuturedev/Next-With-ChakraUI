@@ -9,11 +9,11 @@ const Home: NextPage = () => {
 
   return (
     <Flex height="100vh" alignItems="center" justifyContent="center">
-      <Flex direction="column" background={formBackground} p={12} rounded={6}>
-        <Heading mb={6} size="lg">Login</Heading>
-        <Input placeholder='@moutinhofuturedev' textAlign="center" variant="filled" mb={3} type="email"/>
-        <Input placeholder='********' textAlign="center" variant="filled" mb={3} type="password"/>
-        <Button mb={6} colorScheme='teal'>Log in</Button>
+      <Flex direction="column" background={formBackground} p={["2rem", "2rem", "3rem"]} rounded={6}>
+        <Heading mb={"1.5rem"} size="lg" textAlign={["center", "center", "left"]}>Login</Heading>
+        <Input placeholder='@moutinhofuturedev' textAlign="center" variant="filled" mb={"0.75rem"} type="email"/>
+        <Input placeholder='********' textAlign="center" variant="filled" mb={"0.75rem"} type="password"/>
+        <Button mb={"1.5rem"} colorScheme='teal'>Log in</Button>
         <Button onClick={toggleColorMode}>Toggle Color Mode
           {formBackground === "gray.700" ? <Icon as={MdOutlineLightMode} ml="3"/> : <Icon as={MdModeNight} ml="3"/>} {/* dark:light mode */}
         </Button> 
